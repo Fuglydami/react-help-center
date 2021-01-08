@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #242C2C;
+}
+.container {
+  width: 100%;
+}
+.title{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.title-container{
+  display: grid;
+  place-content: center;
+}
+.h2-title{
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.h2-titleOptions{
+  font-size: 13px;
+  line-height: 0;
+}
+.p-button{
+  text-align: center;
+}
+footer{
+  height: 20vh;
+  width: 56vw;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  border-radius: .2rem;
+  margin-top: 40px;
+}
+h3{
+  text-align: center;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+h2,h3,p{
+  color: #242C2C;
+}
+.inputField{
+  display: grid;
+  place-content: center;
+  margin-bottom: 40px;
+}
+input{
+  height:42px;
+  width: 30vw;
+  border-radius: .2rem;
+  border-style: hidden;
+  background-color: #5D5D5D;
+  outline: transparent;
+}
+.footer h3{
+  text-align: center;
+  padding-top: 23px;  
+  /* line-height: 0; */
+}
+.btn{
+  height: 6vh;
+  width: 23vh;
+  color: white;
+  background-color: #242c2c;
+  cursor: pointer;
+  border-style: hidden;
+  outline: transparent;
+  border-radius: .2rem;
+  box-shadow: #242c2c59 0px 4px 6px;
+}
+.btn:hover{
+  background-color: #242c24d2;
+}
+
+.btn-container{
+  display: grid;
+  place-content: center;
+  margin-top: -22px;
+}
+::placeholder{
+    color: white;
+}
+.mainContent{
+  margin: 0 auto;
+  height: 77vh;
+  margin-bottom: 65px;
+  width: 65vw;
+  background-color: white;
+   border-radius: .25rem;
+}
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+.grid1{
+  height: 50px;
+  width: 13vw;
+  margin-right: 10px;
+  border-radius: .23rem;
+  border: #F2F2F2 solid 2px;
+}
+.titleOption1,
+.titleOption2,
+.titleOption3,
+.titleOption4 {
+  height: 50px;
+  width: 12vw;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer h3 {
+    font-size: 16px;
+  }
+
+  .mainContent {
+    height: 160vh;
+    width: 82vw;
+  }
+  input {
+    width: 36vw;
+  }
+
+  .grid-container {
+    display: grid;
+    place-content: center;
+  }
+
+  .grid1 {
+    width: 50vw;
+    display: grid;
+  }
+
+  .title-container {
+    display: grid;
+    text-align: center;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
