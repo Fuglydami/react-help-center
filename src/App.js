@@ -1,7 +1,7 @@
 import './App.css'
 import content from './data.js'
 // import { useState } from 'react'
-import Footer from "./Footer"
+import Footer from './Footer'
 // import { FaBeer } from 'react-icons/fa'
 
 function App() {
@@ -19,24 +19,18 @@ function App() {
         <section className="mainContent">
           <h3>Top questions</h3>
           <div className="grid-container">
-            {content.map((data, index) => {
-              const {
-                button,
-                title,
-                titleOptions1,
-                titleOptions2,
-                titleOptions3,
-              } = data
+            {content.map((data) => {
+              const { id, button, title, titleOptions } = data
               return (
-                <div key={index}>
+                <div key={id}>
                   <div className="grid1">
                     <p className="p-button">{button}</p>
                   </div>
                   <div className="title-container">
                     <h2 className="h2-title">{title}</h2>
-                    <p className="h2-titleOptions">{titleOptions1}</p>
-                    <p className="h2-titleOptions">{titleOptions2}</p>
-                    <p className="h2-titleOptions">{titleOptions3}</p>
+                    {titleOptions.map((titleOption) => {
+                      return <p className="h2-titleOptions">{titleOption}</p>
+                    })}
                   </div>
                 </div>
               )
