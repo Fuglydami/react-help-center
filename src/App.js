@@ -5,7 +5,7 @@ import Footer from "./Footer";
 // import { FaBeer } from 'react-icons/fa'
 
 // added updated
-function App() {
+const App = () => {
   return (
     <main>
       <section className="container">
@@ -42,6 +42,6 @@ function App() {
       </section>
     </main>
   );
-}
+};
 
 export default App;
