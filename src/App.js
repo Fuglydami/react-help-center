@@ -4,8 +4,8 @@ import content from "./data.js";
 import Footer from "./Footer";
 // import { FaBeer } from 'react-icons/fa'
 
-
-function App() {
+// added updated
+const App = () => {
   return (
     <main>
       <section className="container">
@@ -42,6 +42,6 @@ function App() {
       </section>
     </main>
   );
-}
+};
 
 export default App;
