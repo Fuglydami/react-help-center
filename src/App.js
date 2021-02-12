@@ -4,7 +4,8 @@ import content from './data.js'
 import Footer from './Footer'
 // import { FaBeer } from 'react-icons/fa'
 
-// desktop
+// added updated
+
 function App() {
   return (
     <main>
