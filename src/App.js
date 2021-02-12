@@ -1,7 +1,7 @@
-import './App.css'
-import content from './data.js'
+import "./App.css";
+import content from "./data.js";
 // import { useState } from 'react'
-import Footer from './Footer'
+import Footer from "./Footer";
 // import { FaBeer } from 'react-icons/fa'
 
 // added updated
@@ -18,10 +18,10 @@ function App() {
           <input type="search" placeholder="   &#61447;  Find anything" />
         </div>
         <section className="mainContent">
-          <h3>Top questions</h3>
+          <h3>Next question</h3>
           <div className="grid-container">
             {content.map((data) => {
-              const { id, button, title, titleOptions } = data
+              const { id, button, title, titleOptions } = data;
               return (
                 <div key={id}>
                   <div className="grid1">
@@ -30,18 +30,18 @@ function App() {
                   <div className="title-container">
                     <h2 className="h2-title">{title}</h2>
                     {titleOptions.map((titleOption) => {
-                      return <p className="h2-titleOptions">{titleOption}</p>
+                      return <p className="h2-titleOptions">{titleOption}</p>;
                     })}
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
           <Footer />
         </section>
       </section>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
